@@ -1,0 +1,8 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/location_permit" android:state_checked="false" android:state_pressed="false"/>
+    <item android:drawable="@drawable/location_permit_pressed" android:state_checked="false" android:state_pressed="true"/>
+    <item android:drawable="@drawable/location_refuse" android:state_checked="true" android:state_pressed="false"/>
+    <item android:drawable="@drawable/location_refuse_pressed" android:state_checked="true" android:state_pressed="true"/>
+
+</selector>

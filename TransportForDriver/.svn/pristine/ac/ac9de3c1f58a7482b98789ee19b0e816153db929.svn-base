@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/common_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/zongpingLinear"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/luse"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/zongping"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zongpingtu" />
+
+            <LinearLayout
+                android:id="@+id/zongpingLinear"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/shuizaichawobg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="会员类型"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="会员数"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="查询次数"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/memberList"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"                
+                android:cacheColorHint="#00000000"
+                android:divider="@null" />
+
+            <LinearLayout
+                android:id="@+id/zongpingLinear"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/shuizaichawobg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="区域"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="会员数"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="查询次数"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/queryList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@null" />
+        </LinearLayout>
+   
+    </ScrollView>
+
+</LinearLayout>

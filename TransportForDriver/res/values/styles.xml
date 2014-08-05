@@ -1,0 +1,235 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="hugeBtn">
+        <item name="android:textColor">@color/color_while</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@drawable/btn_bg_huge</item>
+    </style>
+
+    <style name="iSpinner">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textScaleX">0.85</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="iWeatherLabel">
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="iWeatherDetail">
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="Theme.TransparentNoTitleBar" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.NoTitleBar" parent="@android:style/Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="dialogWindowAnim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit_anim</item>
+    </style>
+
+    <style name="icompleteLabel">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textScaleX">0.85</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+    </style>
+
+    <style name="myRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/star_conf_file</item>
+        <item name="android:numStars">5</item>
+        <item name="android:minHeight">21dp</item>
+        <item name="android:maxHeight">25dp</item>
+    </style>
+
+    <style name="myBigRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/star_conf_file_big</item>
+        <item name="android:numStars">5</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:maxHeight">35dp</item>
+    </style>
+
+    <!-- activity-credit-result -->
+    <style name="creditResultInfo1">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#999999</item>
+        <item name="android:layout_marginRight">22dp</item>
+    </style>
+    
+       <style name="creditResultInfoLayout2">       
+        <item name="android:layout_height">47dp</item>        
+        <item name="android:gravity">center_vertical</item>   
+      </style>
+    
+    
+        <style name="creditResultInfo2">       
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#878787</item>     
+    </style>
+
+    <style name="MyRatingBar" parent="@android:style/Widget.RatingBar">    
+        <item name="android:progressDrawable">@drawable/goods_rating_bar</item>    
+        <item name="android:minHeight">10dp</item>    
+        <item name="android:maxHeight">10dp</item>    
+    </style>
+    <style name="goods_bj">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLength">6</item>
+        <item name="android:inputType">number</item>
+        <item name="android:background">@drawable/jgk</item>
+    </style> 
+    <style name="goods_1">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+    <style name="goods_1_1">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+    <style name="goods_1_2">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+    <style name="goods_1_3">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+    <style name="goods_1_4">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+    <style name="goods_1_4_4">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+    <style name="goods_2">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#DB3C0B</item>
+    </style>
+    <style name="goods_2_1">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="goods_3">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+    <style name="goods_3_1">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+    <style name="goods_3_2">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+    <style name="goods_3_3">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#F47102</item>
+    </style>
+    <style name="goods_3_4">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+    <style name="goods_4">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+    <style name="goods_4_1">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+    <style name="goods_4_2">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#DB3C0B</item>
+    </style>
+    <style name="goods_5">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#DB3C0B</item>
+    </style>
+    <style name="goods_6">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#2D71C4</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+    <style name="goods_7">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#669900</item>
+    </style>
+    <style name="goods_7_1">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#669900</item>
+    </style>
+    <style name="goods_7_2">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:background">#D0EBF9</item>
+    </style>
+    <style name="goods_8">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#169828</item>
+    </style>
+    <style name="goods_9">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="goods_10">
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">#D0EBF9</item>
+    </style>
+    <style name="goods_search">
+		<item name="android:background">@drawable/dzbgk215</item>
+		<item name="android:paddingLeft">5dp</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:textSize">20sp</item>
+		<item name="android:textColor">#939393</item>
+    </style>
+    <!-- activity-credit-result  end -->
+</resources>

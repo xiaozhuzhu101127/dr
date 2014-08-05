@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.topjet.crediblenumber"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/common_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/h_margin_big"
+            android:paddingRight="@dimen/h_margin_big"
+            android:paddingTop="15dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp" >
+
+                <ImageView
+                    android:id="@+id/score_shop_label1"
+                    android:layout_width="20.95dp"
+                    android:layout_height="20.32dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/jfzh" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/score_shop_label2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/score_shop_label1"
+                    android:text=""
+                    android:textColor="#444444"
+                    android:textSize="16sp" />
+
+              
+
+                <Button
+                    android:id="@+id/score_rule"
+                    android:layout_width="82.54dp"
+                    android:layout_height="28.57dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/jfgz"
+                    android:onClick="onClick" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_redeem_20"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/common_while_bg"
+                android:onClick="onClick"
+                android:paddingBottom="12dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="12dp"
+                android:paddingTop="10dp" >
+          <ImageView
+                    android:id="@+id/widget_main_item_icon"
+                    android:layout_width="68.57dp"
+                    android:layout_height="84.44dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/btn_recharge_20" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/widget_main_item_icon"
+                    android:paddingLeft="10dp" >
+
+                    <TextView
+                        android:id="@+id/widget_main_item_label_big"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:text="20元充值电话卡 电信、移动、联通都可(总数：5件)"
+                        android:textColor="#595959"
+                        android:textScaleX="0.9"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="19.04dp"
+                            android:layout_height="19.04dp"
+                            android:background="@drawable/jfjg" />
+
+                        <TextView
+                            android:id="@+id/widget_main_item_label_small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:text="积分价格：1000"
+                            android:textColor="#595959"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_redeem_30"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/common_while_bg"
+                android:onClick="onClick"
+                android:paddingBottom="12dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="12dp"
+                android:paddingTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/widget_main_item_icon"
+                    android:layout_width="68.57dp"
+                    android:layout_height="84.44dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/btn_recharge_30" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/widget_main_item_icon"
+                    android:paddingLeft="10dp" >
+
+                    <TextView
+                        android:id="@+id/widget_main_item_label_big"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:text="30元充值电话卡 电信、移动、联通都可(总数：8件)"
+                        android:textColor="#595959"
+                        android:textScaleX="0.9"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="19.04dp"
+                            android:layout_height="19.04dp"
+                            android:background="@drawable/jfjg" />
+
+                        <TextView
+                            android:id="@+id/widget_main_item_label_small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:text="积分价格：1500"
+                            android:textColor="#595959"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_redeem_50"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/common_while_bg"
+                android:onClick="onClick"
+                android:paddingBottom="12dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="12dp"
+                android:paddingTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/widget_main_item_icon"
+                    android:layout_width="68.57dp"
+                    android:layout_height="84.44dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/btn_recharge_50" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/widget_main_item_icon"
+                    android:paddingLeft="10dp" >
+
+                    <TextView
+                        android:id="@+id/widget_main_item_label_big"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:text="50元充值电话卡 电信、移动、联通都可(总数：10件)"
+                        android:textColor="#595959"
+                        android:textScaleX="0.9"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="19.04dp"
+                            android:layout_height="19.04dp"
+                            android:background="@drawable/jfjg" />
+
+                        <TextView
+                            android:id="@+id/widget_main_item_label_small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:text="积分价格：2500"
+                            android:textColor="#595959"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

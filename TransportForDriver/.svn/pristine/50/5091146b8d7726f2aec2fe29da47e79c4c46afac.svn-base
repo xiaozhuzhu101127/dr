@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.topjet.crediblenumber"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/common_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/h_margin_small"
+            android:paddingRight="@dimen/h_margin_small" >
+
+            <LinearLayout
+                android:id="@+id/intro"
+                android:layout_width="wrap_content"
+                android:layout_height="173.333dp"
+                android:layout_below="@+id/ysx"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-50dp"
+                android:background="@drawable/common_while_bg"
+                android:orientation="vertical"
+                android:paddingTop="52dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="运商行手机端"
+                    android:textColor="#216eb4"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="#216eb4"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="10dp"
+                    android:text="运商行是国内第一套物流诚信系统，具有行业不良诚信人员主动识别、周边实用信息查询等多种功能，欢迎使用。"
+                    android:textColor="@color/color_alp_gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@id/ysx"
+                android:layout_width="103.49dp"
+                android:layout_height="113.65dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/setting_about_ysx"
+                android:scaleType="center" />
+
+            <ImageView
+                android:id="@+id/_2d"
+                android:layout_width="95.238dp"
+                android:layout_height="95.238dp"
+                android:layout_below="@id/intro"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/setting_about_td"
+                android:scaleType="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/_2d"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="手机版永久免费"
+                android:textColor="#333333"
+                android:textScaleX="0.9"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/_2d"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:paddingBottom="10dp"
+                android:text="上海拓景信息科技有限公司        杭州龙驹信息科技有限公司"
+                android:textColor="#333333"
+                android:textSize="11.5sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

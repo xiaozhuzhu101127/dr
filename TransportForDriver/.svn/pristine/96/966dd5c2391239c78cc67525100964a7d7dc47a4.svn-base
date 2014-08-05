@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.topjet.crediblenumber"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:focusable="true"  
+        android:focusableInTouchMode="true" >
+
+        <include
+            android:id="@+id/title_bar"
+            layout="@layout/common_title_bar" />
+        <!-- "送货及时" -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/firstPingjia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            
+                android:textColor="#000"
+                android:textSize="24sp" />
+
+            <RatingBar
+                android:id="@+id/fahuojishi"
+                style="@style/myBigRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="3"
+                android:stepSize="1" >
+            </RatingBar>
+        </LinearLayout>
+        <!-- "送货及时结束 -->
+        <!-- "货物完好 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/secondPingjia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            
+                android:textColor="#000"
+                android:textSize="24sp" />
+
+            <RatingBar
+                android:id="@+id/huowuwanhao"
+                style="@style/myBigRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                  android:numStars="5"
+                android:rating="3"
+                android:stepSize="1">
+            </RatingBar>
+        </LinearLayout>
+        <!-- "货物完好  结束 -->
+
+
+        <!-- "运价合理 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运价合理"
+                android:textColor="#000"
+                android:textSize="24sp" />
+
+            <RatingBar
+                android:id="@+id/yujiaheli"
+                style="@style/myBigRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="3"
+                android:stepSize="1" >
+            </RatingBar>
+        </LinearLayout>
+        <!-- "运价合理结束 -->
+
+
+        <!-- "态度良好 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="态度良好"
+                android:textColor="#000"
+                android:textSize="24sp" />
+
+            <RatingBar
+                android:id="@+id/taidulianghao"
+                style="@style/myBigRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="3"
+                android:stepSize="1" >
+            </RatingBar>
+        </LinearLayout>
+        <!-- "态度良好结束 -->
+        <!-- 综合分 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    综合分"
+                android:textColor="#000"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/zonghefen"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/zonghefen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"               
+                    android:textColor="#000"
+                    android:textSize="24sp" 
+                    android:text="3"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 综合分 结束 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="备注：1分为最差，5分为最好"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/pingjiaContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#fff"
+            android:gravity="top"
+            android:lines="10"
+            android:text="请输入评价内容"
+            android:textColor="#C5C5C5"
+            android:textSize="24sp" 
+            android:maxLength="150" />
+
+        <Button
+            android:id="@+id/complete_submit"
+            style="@style/hugeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp"
+            android:onClick="onClick"
+            android:text="提交 "            
+            />
+    </LinearLayout>
+
+</ScrollView>

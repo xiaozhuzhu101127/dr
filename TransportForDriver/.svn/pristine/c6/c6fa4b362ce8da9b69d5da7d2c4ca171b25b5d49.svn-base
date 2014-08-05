@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9E9E9"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/common_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5.1dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15.9dp"
+            android:layout_marginLeft="6.3dp"
+            android:layout_marginTop="10.8dp"
+            android:text="资料纠错："
+            android:textColor="#1F1F1F"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="143.5dp"
+            android:layout_marginTop="6.3dp"
+            android:background="@drawable/login_input"
+            android:orientation="vertical"
+            android:padding="0.6dp" >
+
+            <CheckBox
+                android:id="@+id/correct_name"
+                android:layout_width="match_parent"
+                android:layout_height="36.8dp"
+                android:layout_marginLeft="15dp"
+                android:text="姓名有误"
+                android:textColor="#363636" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@drawable/login_input_line" />
+
+            <CheckBox
+                android:id="@+id/correct_address"
+                android:layout_width="match_parent"
+                android:layout_height="33.7dp"
+                android:layout_marginLeft="15dp"
+                android:text="地址有误"
+                android:textColor="#363636" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@drawable/login_input_line" />
+
+            <CheckBox
+                android:id="@+id/correct_type"
+                android:layout_width="match_parent"
+                android:layout_height="33.7dp"
+                android:layout_marginLeft="15dp"
+                android:text="会员类型有误"
+                android:textColor="#363636" />
+              <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@drawable/login_input_line" />
+           
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/correct_label01"
+            android:layout_width="match_parent"
+            android:layout_height="15.9dp"
+            android:layout_marginLeft="6.3dp"
+            android:layout_marginTop="16.5dp"
+            android:text="纠错备注(正解信息备注)："
+            android:textColor="#1F1F1F"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/correct_content"
+            android:layout_width="match_parent"
+            android:layout_height="111.1dp"
+            android:layout_marginTop="10.1dp"
+            android:background="@drawable/login_input"
+            android:ems="10"
+            android:gravity="left|top"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:padding="5dp"
+            android:scrollbars="vertical"
+            android:textColorLink="@android:color/black" >
+        </EditText>
+
+        <Button
+            android:id="@+id/correct_submit"
+            style="@style/hugeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="26.7dp"
+            android:onClick="onClick"
+            android:text="确定" />
+
+        <Button
+            android:id="@+id/correct_cancel"
+            style="@style/hugeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="10.2dp"
+            android:onClick="onClick"
+            android:text="取消" />
+    </LinearLayout>
+
+</LinearLayout>

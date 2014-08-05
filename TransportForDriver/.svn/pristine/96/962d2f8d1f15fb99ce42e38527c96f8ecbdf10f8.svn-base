@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="200dp"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/dbg">
+	<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    style="@style/goods_3_1"
+	    android:text="恭喜您抢到了"/>
+	<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    style="@style/goods_3_1"
+	    android:text="“去江苏南京、13米、15吨”"
+	    android:id="@+id/goods_trade_info"/>
+	<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="0dp"
+	    android:layout_marginTop="10dp"
+	    android:layout_weight="1"
+	    style="@style/goods_3_1"
+	    android:text="的货源。"/>
+	<Button 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/bg2d"
+	    android:text="查看详情"
+	    style="@style/goods_9"
+	    android:id="@+id/goods_trade"/>
+</LinearLayout>

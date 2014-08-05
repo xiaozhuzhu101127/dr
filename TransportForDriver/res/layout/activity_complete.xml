@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.topjet.crediblenumber"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/common_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:fadeScrollbars="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/h_margin_big"
+                android:paddingRight="@dimen/h_margin_big" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height"
+                    android:layout_marginTop="@dimen/complete_input_margin"
+                    android:background="@drawable/common_while_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="15dp" >
+
+                    <TextView
+                        style="@style/iWeatherLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="身份证号" />
+
+                    <EditText
+                        android:id="@+id/complete_idc"
+                        style="@style/icompleteLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:background="@null"
+                        android:hint="输入文字"
+                        android:maxLength="18"
+                        android:singleLine="true"
+                        android:text="" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height"
+                    android:layout_marginTop="@dimen/complete_input_margin"
+                    android:background="@drawable/common_while_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="15dp" >
+
+                    <TextView
+                        style="@style/iWeatherLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="姓名" />
+
+                    <EditText
+                        android:id="@+id/complete_name"
+                        style="@style/icompleteLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:background="@null"
+                        android:hint="输入文字"
+                        android:singleLine="true"
+                        android:text="" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height"
+                    android:layout_marginTop="@dimen/complete_input_margin"
+                    android:background="@drawable/common_spinner_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="15dp" >
+
+                    <TextView
+                        style="@style/iWeatherLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="身份" />
+
+                    <TextView
+                        android:id="@+id/complete_identity"
+                        style="@style/iWeatherLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:background="@null"
+                        android:textColor="#999999" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height"
+                    android:layout_marginTop="@dimen/complete_input_margin"
+                    android:background="@drawable/common_while_bg"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="15dp" >
+
+                    <TextView
+                        style="@style/iWeatherLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="公司名称" />
+
+                    <EditText
+                        android:id="@+id/complete_company"
+                        style="@style/icompleteLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:background="@null"
+                        android:hint="输入文字"
+                        android:singleLine="true" />
+                </RelativeLayout>
+                
+                 <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height"
+                    android:layout_marginTop="@dimen/complete_input_margin"
+                    android:background="@drawable/common_while_bg"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="15dp" >
+
+                    <TextView
+                        style="@style/iWeatherLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="经营地址" />
+
+                    <EditText
+                        android:id="@+id/complete_address"
+                        style="@style/icompleteLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:background="@null"
+                        android:hint="输入文字"
+                        android:singleLine="true" />
+                </RelativeLayout>
+                
+
+                <LinearLayout
+                    android:id="@+id/complete_for_driver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_height"
+                        android:layout_marginTop="@dimen/complete_input_margin"
+                        android:baselineAligned="false"
+                        android:weightSum="15" >
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:background="@drawable/common_spinner_bg"
+                            android:paddingLeft="12dp" >
+
+                            <TextView
+                                style="@style/iWeatherLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="车牌" />
+
+                            <Spinner
+                                android:id="@+id/complete_plate_region_select"
+                                style="@style/iWeatherLabel"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:entries="@array/plate_region"
+                                android:paddingLeft="60dp"
+                                android:paddingRight="20dp"
+                                android:spinnerMode="dropdown" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/common_spinner_bg" >
+
+                            <Spinner
+                                android:id="@+id/complete_plate_letter_select"
+                                style="@style/iWeatherLabel"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:entries="@array/plate_letter"
+                                android:paddingLeft="12dp"
+                                android:paddingRight="20dp"
+                                android:spinnerMode="dropdown" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="5"
+                            android:background="@drawable/common_while_bg"
+                            android:paddingLeft="12dp"
+                            android:paddingRight="20dp" >
+
+                            <EditText
+                                android:id="@+id/complete_plate_order"
+                                style="@style/icompleteLabel"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:inputType="text"
+                                android:maxLength="5" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_height"
+                        android:layout_marginTop="@dimen/complete_input_margin"
+                        android:background="@drawable/common_spinner_bg"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="15dp" 
+                        android:id="@+id/rl_complete_truck_type"
+                        android:onClick="onClick">
+
+                        <TextView
+                            style="@style/iWeatherLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="车型" />
+
+                        <TextView
+                            android:id="@+id/complete_truck_type"
+                            style="@style/iWeatherLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="80dp"
+                            android:background="@null"                         
+                            android:tag="" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_height"
+                        android:layout_marginTop="@dimen/complete_input_margin"
+                        android:background="@drawable/common_spinner_bg"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="15dp" 
+                        android:id="@+id/rl_complete_truck_length"
+                        android:onClick="onClick"
+                        >
+
+                        <TextView
+                            style="@style/iWeatherLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="车长" />
+
+                        <TextView
+                            android:id="@+id/complete_truck_length"
+                            style="@style/iWeatherLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="80dp"
+                            android:background="@null"                            
+                            android:tag="" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_height"
+                        android:layout_marginTop="@dimen/complete_input_margin"
+                        android:baselineAligned="false"
+                        android:weightSum="2" >
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/common_spinner_bg" >
+
+                            <EditText
+                                android:id="@+id/complete_target1"
+                                style="@style/iWeatherLabel"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginRight="20dp"
+                                android:background="@null"
+                                android:hint="常跑路线"
+                                android:tag="" />
+
+                            <View
+                                android:id="@+id/for_target1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@null" 
+                                android:onClick="onClick"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/common_spinner_bg"
+                            android:paddingLeft="12dp"
+                            android:paddingRight="20dp" >
+
+                            <EditText
+                                android:id="@+id/complete_target2"
+                                style="@style/iWeatherLabel"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:hint="常跑路线"
+                                android:tag="" />
+
+                            <View
+                                android:id="@+id/for_target2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:onClick="onClick"
+                                android:background="@null" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_height"
+                        android:layout_marginTop="@dimen/complete_input_margin"
+                        android:baselineAligned="false"
+                        android:weightSum="2" >
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/common_spinner_bg"
+                            android:paddingLeft="12dp"
+                            android:paddingRight="20dp" >
+
+                            <EditText
+                                android:id="@+id/complete_target3"
+                                style="@style/iWeatherLabel"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:hint="常跑路线"
+                                android:tag="" />
+
+                            <View
+                                android:id="@+id/for_target3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:onClick="onClick"
+                                android:background="@null" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/common_spinner_bg"
+                            android:paddingLeft="12dp"
+                            android:paddingRight="20dp" >
+
+                            <EditText
+                                android:id="@+id/complete_target4"
+                                style="@style/iWeatherLabel"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:hint="常跑路线"
+                                android:tag="" />
+
+                            <View
+                                android:id="@+id/for_target4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:onClick="onClick"
+                                android:background="@null" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    
+                    <RelativeLayout
+		                android:id="@+id/searchViolate"
+		                android:layout_width="fill_parent"
+		                android:layout_height="120dp"
+		                android:layout_marginBottom="@dimen/category_item_margin"
+		                android:layout_marginTop="5dp"
+		                android:background="@drawable/common_while_bg"
+		                android:onClick="onClick"
+		                android:paddingLeft="20dp"
+		                android:paddingRight="20dp" >
+		               
+		                    <LinearLayout 
+		                        android:layout_width="fill_parent"
+		                         android:layout_height="wrap_content"
+		                          android:orientation="horizontal"
+		                          android:paddingTop="14dp"
+		                          android:gravity="center"
+		                                              >
+		                    
+		                          <ImageView 
+		                                android:layout_width="wrap_content"
+				                    android:layout_height="wrap_content"
+				                    android:src="@drawable/voilate1"
+				                    android:paddingRight="15dp"
+		                              />
+				                <TextView
+				             
+				                    android:layout_width="wrap_content"
+				                    android:layout_height="wrap_content"
+				                    android:layout_centerInParent="true"
+				                    android:text="上传行驶证"
+				                    android:textColor="#595959"
+				                    android:textSize="18sp" />
+				           </LinearLayout>
+		
+		                 <TextView
+				                
+				                    android:layout_width="wrap_content"
+				                    android:layout_height="wrap_content"
+				                    android:layout_centerInParent="true"
+				                    android:text="拍摄清晰行驶证照片"
+				                    android:textColor="#595959"
+				                    android:textSize="18sp"
+				                       android:paddingTop="14dp"
+				                     />
+		            </RelativeLayout>
+                    
+                </LinearLayout>
+            </LinearLayout>
+			<ImageView
+                        android:id="@+id/violatePicture"
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp" />
+            <Button
+                android:id="@+id/complete_submit"
+                style="@style/hugeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/h_margin_tiny"
+                android:layout_marginRight="@dimen/h_margin_tiny"
+                android:layout_marginTop="8dp"
+                android:onClick="onClick"
+                android:text="提交 " />
+        </LinearLayout>
+        
+    </ScrollView>
+
+</LinearLayout>

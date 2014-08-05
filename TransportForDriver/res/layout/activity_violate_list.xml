@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray"
+    android:orientation="vertical" >
+
+        
+      <include
+        android:id="@+id/title_bar"
+        layout="@layout/common_title_bar" />
+      
+     <TableLayout 
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+             
+        >
+        <TableRow 
+                android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                 android:background="#25add5"
+            
+            >
+            
+            <TextView 
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="提交时间"
+                android:textSize="16sp"    
+                android:textColor="#fff"           
+                android:gravity="center"
+                />
+            
+              <TextView 
+                 android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:text="被查询车牌"
+                       android:textSize="16sp"
+                           android:textColor="#fff"
+                    android:gravity="center"
+                />
+              
+                <TextView 
+                 android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:text="查询区域"
+                       android:textSize="16sp"
+                android:textColor="#fff"
+                   android:gravity="center"
+                />
+                
+                 <TextView 
+                 android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:text="查询状态"
+                       android:textSize="16sp"
+                android:textColor="#fff"
+                    android:gravity="center"
+                />
+            
+            
+            
+        </TableRow>
+	            <ListView
+			        android:id="@+id/listView"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:cacheColorHint="#00000000"
+			        android:divider="@null" 
+			        />
+     </TableLayout>
+     
+  
+    
+        
+    </LinearLayout>
+
+ 

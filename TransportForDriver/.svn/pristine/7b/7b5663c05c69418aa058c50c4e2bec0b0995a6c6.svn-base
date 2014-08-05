@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/h_margin_small"
+    android:paddingRight="@dimen/h_margin_small" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="78.1dp"
+        android:background="@drawable/common_while_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="3dp"
+        android:paddingTop="8dp" >
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/item_location_manage_photo"
+                android:layout_width="39.36dp"
+                android:layout_height="41.27dp"
+                android:src="@drawable/twitter_photo" />
+
+            <TextView
+                android:id="@+id/item_location_manage_credit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:singleLine="true"
+                android:text="诚信值:120000"
+                android:textColor="#333333"
+                android:textScaleX="0.85"
+                android:textSize="9.5sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/item_location_manage_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="张三丰"
+                    android:textColor="#333333"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="申请定位"
+                    android:textColor="#333333"
+                    android:textSize="10.5sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/item_location_manage_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="2dp"
+                android:text="上海拓景信息科技有限公司"
+                android:textColor="#555555"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/item_location_manage_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="2dp"
+                android:text="13888888888"
+                android:textColor="#555555"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/location_permission_refuse"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="未同意定位"
+                android:textColor="#dd0000"
+                android:textScaleX="0.85"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/location_permission_permit"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="已同意定位"
+                android:textColor="#7294ba"
+                android:textScaleX="0.85"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <ToggleButton
+                android:id="@+id/location_permittion_btn"
+                android:layout_width="70dp"
+                android:layout_height="27.428dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/location_permission_btn"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

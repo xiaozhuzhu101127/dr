@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="115dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_select_background"
+    android:orientation="vertical"
+
+    >
+    
+    
+    <LinearLayout 
+        android:id="@+id/qsykLinear"
+	    android:layout_width="match_parent"
+	    android:layout_height="34.8dp"
+        android:paddingTop="5dp"
+	    android:orientation="horizontal"
+        android:gravity="center_vertical"
+	     
+	   >
+	    <ImageView  android:src="@drawable/dialog_select_item"
+	        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	  
+	  
+	 
+	    />
+	    <TextView 
+	            android:id="@+id/qsyk"
+	            android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="轻松一刻"
+	    android:textColor="#fff"
+
+	    />
+
+      </LinearLayout>
+      <View 
+           android:layout_width="match_parent"
+	       android:layout_height="1dp"
+	       android:background="@drawable/dialog_line"
+          />
+      
+      
+    
+    
+    <LinearLayout 
+        android:id="@+id/hyfbLinear"
+	    android:layout_width="match_parent"
+	    android:layout_height="34.8dp"
+        android:paddingTop="5dp"
+	    android:orientation="horizontal"
+        android:gravity="center_vertical"
+	     
+	   >
+	    <ImageView  android:src="@drawable/dialog_select_item"
+	        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	  
+	  
+	 
+	    />
+	    <TextView 
+	            android:id="@+id/hyfb"
+	            android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="会员发布"
+	    android:textColor="#fff"
+
+	    />
+
+      </LinearLayout>
+      <View 
+           android:layout_width="match_parent"
+	       android:layout_height="1dp"
+	       android:background="@drawable/dialog_line"
+          />
+      
+      
+      
+      
+      
+       <LinearLayout 
+        android:id="@+id/ysxfbLinear"
+	    android:layout_width="match_parent"
+	    android:layout_height="34.8dp"
+        android:paddingTop="5dp"
+	    android:orientation="horizontal"
+        android:gravity="center_vertical"
+	     
+	   >
+	    <ImageView  android:src="@drawable/dialog_select_item"
+	        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	  
+	  
+	 
+	    />
+	    <TextView 
+	            android:id="@+id/ysxfb"
+	            android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="运商行发布"
+	    android:textColor="#fff"
+
+	    />
+
+      </LinearLayout>
+      <View 
+           android:layout_width="match_parent"
+	       android:layout_height="1dp"
+	       android:background="@drawable/dialog_line"
+          />
+       
+      
+      
+      
+       <LinearLayout 
+        android:id="@+id/rdxwbLinear"
+	    android:layout_width="match_parent"
+	    android:layout_height="34.8dp"
+        android:paddingTop="5dp"
+	    android:orientation="horizontal"
+        android:gravity="center_vertical"
+	     
+	   >
+	    <ImageView  android:src="@drawable/dialog_select_item"
+	        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	  
+	  
+	 
+	    />
+	    <TextView 
+	            android:id="@+id/rdxw"
+	            android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="热点新闻"
+	    android:textColor="#fff"
+
+	    />
+
+      </LinearLayout>
+      <View 
+           android:layout_width="match_parent"
+	       android:layout_height="1dp"
+	       android:background="@drawable/dialog_line"
+          />
+       
+  
+
+  
+
+</LinearLayout>

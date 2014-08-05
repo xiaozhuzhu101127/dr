@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/h_margin_small"
+    android:paddingRight="@dimen/h_margin_small"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/common_while_bg"
+        android:orientation="vertical"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp" >
+
+        <TextView
+            android:id="@+id/item_local_phone_book_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="2dp"
+            android:text="上海拓景信息科技有限公司"
+            android:textColor="#4f4f4f"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/item_local_phone_book_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="2dp"
+            android:text="地址：上海浦东新区程辉181号14#上海浦东新区程辉181号14#"
+            android:textColor="#4f4f4f"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_local_phone_book_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="2dp"
+            android:text="电话：02655556666"
+            android:textColor="#4f4f4f"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_local_phone_book_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="2dp"
+            android:text="简介：130家全国专线"
+            android:textColor="#4f4f4f"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="15dp"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/h_margin_small"
+    android:paddingRight="@dimen/h_margin_small" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/common_while_bg"
+        android:orientation="vertical"
+        android:paddingBottom="4dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="8dp" >
+
+        <!-- 头像用户信息 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp" >
+
+            <ImageView
+                android:id="@+id/touxiang"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:src="@drawable/twitter_photo" />
+
+            <TextView
+                android:id="@+id/realName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/touxiang"
+                android:paddingLeft="5dp"
+                android:textColor="#4E4E4E"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/companyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/realName"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:textColor="#555555"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/yslAccountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/realName"
+                android:layout_toRightOf="@id/touxiang"
+                android:paddingLeft="5dp"
+                android:text="诚信值:"
+                android:textColor="#909090"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/yslAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/realName"
+                android:layout_toRightOf="@id/yslAccountText"
+                android:textColor="#BEBEBE"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <!-- 头像用户信息结束 -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#EAEAEA" />
+
+        <!-- 评价信息 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:orientation="horizontal" >
+
+            <!-- 送货及时  如实描述-->
+
+            <TextView
+                android:id="@+id/miaoshu1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="送货及时:"
+                android:textColor="#9F9F9F"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/pingfen1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"               
+                android:textColor="#9F9F9F"
+                android:textSize="14sp" />
+            <!-- 送货及时结束 -->
+
+
+            <!-- 货物玩好  结款及时-->
+
+            <TextView
+                android:id="@+id/miaoshu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="货物完好:"
+                android:textColor="#9F9F9F"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/pingfen2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"              
+                android:textColor="#9F9F9F"
+                android:textSize="14sp" />
+            <!-- 货物玩好结束 -->
+
+
+            <!-- 运价合理 -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="运价合理:"
+                android:textColor="#9F9F9F"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/yunjiaheli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#9F9F9F"
+                android:textSize="14sp" />
+            <!-- 运价合理结束 -->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:orientation="horizontal" >
+
+            <!-- 态度良好 -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="态度良好:"
+                android:textColor="#9F9F9F"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/taidulianghao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+             
+                android:textColor="#9F9F9F"
+                android:textSize="14sp" />
+            <!-- 态度良好结束 -->
+
+
+            <!-- 综合得分 -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="综合得分:"
+                android:textColor="#9F9F9F"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/zhonghedefen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#9F9F9F"
+                android:textSize="14sp" />
+
+            <RatingBar
+                android:id="@+id/xingji"
+                style="@style/myRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="1"
+                android:stepSize="1" >
+            </RatingBar>
+            <!-- 货物玩好结束 -->
+
+        </LinearLayout>
+        <!-- 评价信息结束 -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#EAEAEA" />
+
+        <TextView
+            android:id="@+id/pingjiaContent"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textColor="#767676"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/pingjiaShiJian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+package com.topjet.crediblenumber.model;
+
+import java.io.Serializable;
+ 
+
+public class UserInfo implements  Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6180794227193976465L;
+	public String mobile;
+	public String realName; 
+	public String cardNo;
+	public String dctUt;//身份
+	public String companyName;
+	public String plate1;//车牌开头 如浙
+	public String plate2;//车牌区域标示如 A
+	public String plate3;//车牌号 如HN001
+	public String dctTklen;//车长
+	public String dctTT;//车型
+	public String tkTarget1;//常跑路线1
+	public String tkTarget2;//常跑路线2
+	public String tkTarget3;//常跑路线3
+	public String tkTarget4;//常跑路线4	 
+	public String address;//经营地址
+	public String drivePicture;//行驶证照片
+}

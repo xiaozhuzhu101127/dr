@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/common_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/h_margin_small"
+            android:paddingRight="@dimen/h_margin_small" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="43.81dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/common_while_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请输入新密码"
+                    android:textColor="#484848"
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:id="@+id/new_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@null"
+                    android:hint="请填写新密码"
+                    android:inputType="number"                                 
+                    android:textColor="#484848"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+         
+
+            <Button
+                android:id="@+id/recommend_send"
+                style="@style/hugeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/h_margin_tiny"
+                android:layout_marginRight="@dimen/h_margin_tiny"
+                android:layout_marginTop="20dp"
+                android:text="密码修改"
+                android:onClick="onClick" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

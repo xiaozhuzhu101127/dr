@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:drawable="@drawable/btn_recharge_bg"/>
+    <item
+        android:bottom="15dip"
+        android:right="8dip">
+        <bitmap
+            android:gravity="bottom|right"
+            android:src="@drawable/btn_recharge_30_num" />
+    </item>
+
+</layer-list>

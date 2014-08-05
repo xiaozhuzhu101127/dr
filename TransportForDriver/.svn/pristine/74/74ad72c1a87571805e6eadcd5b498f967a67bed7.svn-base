@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.topjet.crediblenumber"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/common_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/h_margin_small"
+            android:paddingRight="@dimen/h_margin_small" >
+
+            <EditText
+                android:id="@+id/twitter_content"
+                android:layout_width="match_parent"
+                android:layout_height="111.1dp"
+                android:layout_marginTop="10.1dp"
+                android:background="@drawable/login_input"
+                android:ems="10"
+                android:gravity="left|top"
+                android:hint="输入文字"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:maxLength="300"
+                android:padding="5dp"
+                android:scrollbars="vertical"
+                android:textColorLink="@android:color/black" >
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="10dp"
+                android:text="常用语："
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/twitter_common_select"
+                style="@style/iSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_spinner_bg"
+                android:entries="@array/common_sentence"
+                android:paddingLeft="60dp"
+                android:paddingRight="20dp"
+                android:spinnerMode="dropdown" />
+
+            <Button
+                android:id="@+id/twitter_send"
+                style="@style/hugeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/h_margin_tiny"
+                android:layout_marginRight="@dimen/h_margin_tiny"
+                android:layout_marginTop="20dp"
+                android:onClick="onClick"
+                android:text="提交" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

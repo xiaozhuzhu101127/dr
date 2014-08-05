@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/header_bg"
+    android:gravity="center_vertical" >
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="59dp"
+        android:layout_height="27.9dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/top_btn_bg"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="返回"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="当地电话本"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btn_other_function"
+        android:layout_width="wrap_content"
+        android:layout_height="27.9dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/top_btn_bg"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:text="--"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

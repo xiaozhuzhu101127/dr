@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.topjet.crediblenumber"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120.46dp"
+            android:background="@drawable/main_top_bg" >
+            
+            <!--  
+            <ImageView
+                android:id="@+id/settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:onClick="onClick"
+                android:src="@drawable/main_settings" />
+                
+                 <RelativeLayout>
+                 
+                 
+                 </RelativeLayout
+                 
+                 >
+-->
+
+            <RelativeLayout
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.1dp"
+                android:layout_marginTop="18.5dp"
+                android:background="@drawable/main_sig"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/photoid"
+                    android:layout_width="80.99dp"
+                    android:layout_height="71.99dp"
+                    android:padding="4.1dp"
+                    android:src="@drawable/main_sig_default" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/photoid"
+                    android:orientation="vertical" >
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <TableRow>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="7.8dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/main_sig1" />
+
+                            <TextView
+                                android:id="@+id/realName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#445164" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="7.8dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/main_sig2" />
+
+                            <TextView
+                                android:id="@+id/yslAccount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#445164" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="7.8dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/main_sig3" />
+
+                            <TextView
+                                android:id="@+id/userType"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#445164" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="7.8dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/main_sig4" />
+
+                            <TextView
+                                android:id="@+id/localTrustLevel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#445164" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+            </RelativeLayout>
+<!--  
+            <TextView
+                android:id="@+id/main_dial"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:background="@null"
+                android:onClick="onClick"
+                android:text="4000566560" />
+-->
+            <ToggleButton
+                android:id="@+id/main_truck_status"
+                android:layout_width="67.857dp"
+                android:layout_height="35.302dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="14dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/truck_status_btn"
+                android:checked="false"
+                android:onClick="onClick"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/h_margin_big"
+            android:paddingRight="@dimen/h_margin_big" >
+
+            <TextView
+                android:id="@+id/main_reward_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/hurn"
+                android:text="为他人安装运商行手机版立得8元现金奖励，多装多得。"
+                android:textColor="@color/color_alp_gray"
+                android:textScaleX="0.80"
+                android:textSize="12.5sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="8dp "
+                android:layout_marginTop="4dp "
+                android:background="#c8c8c8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.topjet.crediblenumber.widget.MainItemButton
+                    android:id="@+id/main_item_qhh"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    custom:icon="@drawable/main_bddhb"
+                    custom:labelBig="抢好货"
+                    custom:labelSmall="第一时间获得诚信好货源" />
+
+                <com.topjet.crediblenumber.widget.MainItemButton
+                    android:id="@+id/main_item_credit_query"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_item_margin"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    custom:icon="@drawable/main_wlcxcx"
+                    custom:labelBig="口碑评价"
+                    custom:labelSmall="诚信查询确保交易平安" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.topjet.crediblenumber.widget.MainItemButton
+                    android:id="@+id/main_item_twitter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    custom:icon="@drawable/main_dhzx"
+                    custom:labelBig="大货在线"
+                    custom:labelSmall="周边路况、路检、新鲜事" />
+
+                <com.topjet.crediblenumber.widget.MainItemButton
+                    android:id="@+id/main_item_tools"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_item_margin"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    custom:icon="@drawable/main_sygjx"
+                    custom:labelBig="实用工具包"
+                    custom:labelSmall="天气、违章查询、身份核查" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.topjet.crediblenumber.widget.MainItemButton
+                    android:id="@+id/huiyuanfuli"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    custom:icon="@drawable/main_hyfl"
+                    custom:labelBig="会员福利"
+                    custom:labelSmall="抽奖，积分商城等" />
+
+                <com.topjet.crediblenumber.widget.MainItemButton
+                    android:id="@+id/main_item_location_manage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_item_margin"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    custom:icon="@drawable/main_dwgl"
+                    custom:labelBig="定位管理"
+                    custom:labelSmall="管理位置查看申请" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.topjet.crediblenumber.widget.MainItemButton
+                    android:id="@+id/main_item_message"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    custom:icon="@drawable/main_xxzx"
+                    custom:labelBig="消息中心"
+                    custom:labelSmall="各种通知及会员互发消息" />
+
+                <com.topjet.crediblenumber.widget.MainItemButton
+                    android:id="@+id/main_item_settings"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_item_margin"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    custom:icon="@drawable/main_sz"
+                    custom:labelBig="系统设置"
+                    custom:labelSmall="完善资料、账号余额等系统相关" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

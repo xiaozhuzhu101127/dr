@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.topjet.crediblenumber"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/common_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/h_margin_big"
+                android:paddingRight="@dimen/h_margin_big" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="@dimen/complete_input_margin"
+                    android:background="@drawable/common_while_bg"
+                    android:gravity="center"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="15dp" >
+
+                    <ImageView
+                        android:id="@+id/violatePicture"
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/complete_for_driver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_height"
+                        android:layout_marginTop="@dimen/complete_input_margin"
+                        android:baselineAligned="false"
+                        android:weightSum="2" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/item_height"
+                            android:layout_marginTop="@dimen/complete_input_margin"
+                            android:background="@drawable/common_spinner_bg"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="12dp"
+                            android:paddingRight="15dp" >
+
+                            <EditText
+                                android:id="@+id/complete_target1"
+                                style="@style/iWeatherLabel"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:background="@null"
+                                android:hint="查询城市"
+                                android:tag="" />
+
+                            <View
+                                android:id="@+id/for_target1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@null"
+                                android:onClick="onClick" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/complete_submit"
+                style="@style/hugeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/h_margin_tiny"
+                android:layout_marginRight="@dimen/h_margin_tiny"
+                android:layout_marginTop="8dp"
+                android:onClick="onClick"
+                android:text="提交 " />
+            
+              <ImageView
+            android:id="@+id/mediawall_img_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/srolllistview_loading" 
+            android:visibility="gone"/>
+        </LinearLayout>
+
+      
+    </ScrollView>
+
+</LinearLayout>

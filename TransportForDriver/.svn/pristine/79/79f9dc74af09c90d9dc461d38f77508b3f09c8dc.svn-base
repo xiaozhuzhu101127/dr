@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_while">#FFFFFF</color>
+    <color name="color_background">#FAFAFA</color>
+    <color name="color_black">#000000</color>
+    <color name="color_gray">#E9E9E9</color>
+    <color name="color_black_75_transparent">#b0000000</color>
+    <color name="color_pink">#FFFF57c5</color>
+    <color name="color_transparent">#00000000</color>
+    <color name="color_red">#FFFF00FF</color>
+    <color name="color_select_dialog">#2e83e2</color>
+    <color name="vifrification">#00000000</color>
+    <color name="rush">#FEF0DE</color>
+    <color name="gridview">#134B8E</color>
+    <color name="blue">#3889DA</color>
+    <color name="darkblue">#225CAF</color>
+
+    <!-- 透明 -->
+    <!--
+    <color name="gray">#666666</color>
+    -->
+    <color name="color_alp_gray">#666666</color>
+    <color name="color_goods_noqiang">#F2F2F1</color>
+    <color name="color_line">#C8C7C7</color>
+    <color name="color_text">#595959</color>
+    <color name="transparent">#00000000</color>
+    <color name="addDianPingTextColor">#163d7c</color>
+    <color name="addDianPingTextColorShadow">#3692da</color>
+
+</resources>

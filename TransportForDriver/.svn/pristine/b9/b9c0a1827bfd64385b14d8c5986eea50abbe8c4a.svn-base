@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="180dp"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/dbg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+	    <ImageView
+		        android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:src="@drawable/alert"/>
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    style="@style/goods_3_1"
+		    android:text="身份认证提交成功"/>
+    </LinearLayout>
+	<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    style="@style/goods_3_1"
+	    android:text="如需尽快通过审核,请致电客服"/>
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:gravity="center"
+	    android:drawableLeft="@drawable/dh"
+	    android:text="  4000566560"
+	    style="@style/goods_2"
+	    android:id="@+id/check_kefu"/>
+	<Button 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/bg2d"
+	    android:id="@+id/check_kefu_sub"
+	    android:gravity="center"
+	    android:text="确定"
+	    style="@style/goods_9">
+	</Button>
+</LinearLayout>
